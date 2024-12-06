@@ -129,7 +129,7 @@ const CalendarData: React.FC = () => {
     <>
       <div className={style.Route}>
         <h5>Calendar</h5>
-        <Button Text="Add New" buttonClass={style.buttonAdd} disabled={true} />
+        <Button Text="Add New" buttonClass={style.buttonAdd} Disable />
       </div>
       <div className={style.container}>
         <Space className={style.SearchTable}>
