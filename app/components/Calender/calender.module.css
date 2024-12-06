@@ -1,0 +1,83 @@
+.container{
+    background-color: #ffffff;
+    /* margin-top: 5px; */
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 6px;
+
+}
+
+.SearchTable{
+    margin-bottom: 25px;
+    justify-content: space-between;
+    display: flex;
+    padding: 0px 15px;
+}
+.ViewChange{
+    display: flex;
+    align-items: center;
+}
+.SearchBar{
+    display: flex;
+    align-items: center;
+}
+
+.tableSettings{
+    font-size: 19.5px;
+    margin-left: 10px;
+    border: 0.5px solid grey;
+    padding: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+.tableInstruction{
+    font-size: 25.5px;
+    margin-left: 10px;
+    padding: 5px;
+    border: 0.5px solid grey;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.boxIcons{
+    border: 0.5px solid grey;
+    padding: 2px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.gridIcon{
+    font-size: 20px;
+}
+.gridIcon2{
+    font-size: 20px;
+    color: #005CE8;
+}
+
+.Route{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Route p{
+    padding: 0;
+    margin: 0;
+}
+.buttonAdd{
+    background: #005CE8;
+    color: #ffffff;
+
+}
+
+
+.inputSearch{
+}
