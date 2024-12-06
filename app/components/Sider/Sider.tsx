@@ -35,21 +35,23 @@ import Image from 'next/image';
 import Link from 'next/link';
 import TrasCodeMapping from '../TransCodeMapping/TransCodeMapping'
 import ResCodeMapping from '../ResCodeMapping/ResCodeMapping'
+import type { MenuProps } from 'antd';
 
 
-interface MenuItem {
-    key: string;
-    label: string | React.ReactNode;
-    icon?: React.ReactNode;
-    children?: MenuItem[];
-    type?: 'divider';
-}
-interface MenuItemClose {
-    key: string;
-    icon?: React.ReactNode;
-    children?: MenuItem[];
-    type?: 'divider';
-}
+
+// interface MenuItem {
+//     key: string;
+//     label: string | React.ReactNode;
+//     icon?: React.ReactNode;
+//     children?: MenuItem[];
+//     type?: 'divider';
+// }
+// interface MenuItemClose {
+//     key: string;
+//     icon?: React.ReactNode;
+//     children?: MenuItemClose[];
+//     type?: 'divider';
+// }
 
 
 const Sider: React.FC = () => {
@@ -87,7 +89,7 @@ const Sider: React.FC = () => {
         },
     ];
 
-    const items: MenuItem[] = [
+    const items: MenuProps['items'] = [
         {
             key: 'Dashboard',
             label: 'Dashboard',
@@ -96,7 +98,6 @@ const Sider: React.FC = () => {
         {
             type: 'divider',
             key: "",
-            label: "",
         },
         {
             key: 'Administration',
@@ -186,7 +187,7 @@ const Sider: React.FC = () => {
         },
     ];
 
-    const itemsClose: MenuItemClose[] = [
+    const itemsClose: MenuProps['items'] = [
         {
             key: 'Dashboard',
             icon: <HomeOutlined style={{ fontSize: 20, color: "#626C70" }} />,
@@ -225,10 +226,9 @@ const Sider: React.FC = () => {
         },
     ];
 
-    const HandleClick = (items:MenuItem) => {
-        setView(items);
+    const HandleClick: MenuProps['onClick'] = (info) => {
+        setView({ key: info.key });
     };
-
     return (
         <section>
             <div className={`container-fluid ${style.containerFluid}`}>
