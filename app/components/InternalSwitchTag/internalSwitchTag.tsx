@@ -17,13 +17,9 @@ interface DataSource {
     InternalSwitchTag: string;
 }
 
-interface MultiViewTableProps {
-    Test_Red: RootState["Test_Red"];
-    GetBankBranchesData: () => void;
-  }
 
 
-const MultiViewTable: React.FC<MultiViewTableProps> = () => {
+const MultiViewTable: React.FC = ({}) => {
     const [currentPage, setCurrentPage] = useState<number>(1);
     const [pageSize, setPageSize] = useState<number>(10);
     const [searchText, setSearchText] = useState<string>('');
@@ -127,8 +123,6 @@ const MultiViewTable: React.FC<MultiViewTableProps> = () => {
         setLoadingText(false)
         }, 2000) 
         }, [])
-    
-
     return (
         <>
             <div className={style.Route}>
@@ -170,7 +164,6 @@ const MultiViewTable: React.FC<MultiViewTableProps> = () => {
                 />
                     <Pagination
                         align='end'
-                        
                         showTotal={(total) => `Total ${total} items`}
                         current={currentPage}
                         total={filteredData.length}

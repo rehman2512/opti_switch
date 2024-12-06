@@ -299,7 +299,7 @@ const Sider: React.FC = () => {
                                 </div>
                             </div>
                             <div>
-                                {typeof isView === 'object' && isView.key === 'Internal_Switch_Tag' && <InternalSwitch />}
+                                {typeof isView === 'object' && isView.key === 'Internal_Switch_Tag' && <InternalSwitch  />}
                                 {typeof isView === 'object' && isView.key === 'Institute_Management' && <InstituteManagement />}
                                 {typeof isView === 'object' && isView.key === 'Service_Configuration' && <ServiceConfiguration />}
                                 {typeof isView === 'object' && isView.key === 'Internal_Response_Code' && <InternalResponseCode />}
