@@ -126,7 +126,7 @@ const SignIn: React.FC<MultiViewTableProps> = () => {
                   isShowError={false}
                   CheckboxClass={`${style.remember}`}
                   errors={errors}
-                  control={control}
+                  control={control} 
 
                 />
                 <Link href="/">Forgot Password?</Link>

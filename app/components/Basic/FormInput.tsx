@@ -5,6 +5,7 @@ import { Controller, Control, FieldErrors } from 'react-hook-form';
 
 
 interface FormInputProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   control: Control<any>;
   placeholder?: string;
   className?: string;
@@ -60,6 +61,7 @@ const FormInput: React.FC<FormInputProps> = ({
 };
 
 interface FormCheckBoxProps {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   control: Control<any>;
   name: string;
   errors: FieldErrors;
