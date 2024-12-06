@@ -22,10 +22,7 @@ interface SignInForm {
   rememberMe?: boolean;
 }
 
-interface MultiViewTableProps {
-  Test_Red: RootState["Test_Red"];
-  GetBankBranchesData: () => void;
-}
+
 
 const validationSchema = yup.object().shape({
   email: yup.string().email('Invalid email format. Add `@`.').required('Email is required'),
@@ -33,7 +30,7 @@ const validationSchema = yup.object().shape({
   rememberMe: yup.boolean(),
 });
 
-const SignIn: React.FC<MultiViewTableProps> = () => {
+const SignIn: React.FC = () => {
   const [message, contextHolder] = notification.useNotification();
   const [spinning, setSpinning] = React.useState(false);
   const [isClient, setIsClient] = useState(false);
