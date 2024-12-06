@@ -54,7 +54,7 @@ const ClusterManagement: React.FC = () => {
         <>
             <div className={style.Route}>
                 <h5>Cluster Management</h5>
-                <Button Text={'Add New'} buttonClass={style.buttonAdd} />
+                <Button Text={'Add New'} buttonClass={style.buttonAdd} Disable />
             </div>
             <div className={style.container}>
                 <Space className={style.SearchTable}>

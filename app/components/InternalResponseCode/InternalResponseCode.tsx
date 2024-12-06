@@ -74,7 +74,7 @@ const InternalResponseCode: React.FC = () => {
     <>
       <div className={style.Route}>
         <h5>Internal Response Code</h5>
-        <Button Text={'Add New'} buttonClass={style.buttonAdd} />
+        <Button Text={'Add New'} buttonClass={style.buttonAdd} Disable />
       </div>
       <div className={style.container}>
         <Space className={style.SearchTable}>

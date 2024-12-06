@@ -149,7 +149,7 @@ const InstituteManagement: React.FC = () => {
     <>    
       <div className={style.Route}>
         <h5>Transaction</h5>
-        <Button Text={'Add New'} buttonClass={style.buttonAdd} />
+        <Button Text={'Add New'} buttonClass={style.buttonAdd} Disable />
       </div>
       <div className={style.container}>
         <Space className={style.SearchTable}>
